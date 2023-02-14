@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sanbonmatsu Chaya | Home</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\small icon.png" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\css\style.css" />
+    <link rel="stylesheet" href="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\css\effect.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="Header">
+      <div class="col-xl navbar-desktop fixed-top" style="width: 100%">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg nav-container">
+            <div class="container-fluid">
+              <a class="navbar-brand navbrand-light" href="#"><img src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Logo.png" style="width: 110px; height: auto" alt="" /></a>
+              <a class="navbar-brand navbrand-dark" href="#"><img src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Logo_white.png" style="width: 110px; height: auto" alt="" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                  <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Things to do</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="nav-link dropdown-item text-white" href="#">Action</a></li>
+                      <li><a class="nav-link dropdown-item text-white" href="#">Another action</a></li>
+                      <li><hr class="nav-link dropdown-divider" /></li>
+                      <li><a class="nav-link dropdown-item text-white" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Places to go</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="nav-link dropdown-item text-white" href="#">Action</a></li>
+                      <li><a class="nav-link dropdown-item text-white" href="#">Another action</a></li>
+                      <li><hr class="nav-link dropdown-divider" /></li>
+                      <li><a class="nav-link dropdown-item text-white" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-white" aria-current="page" href="#">Plan your trip</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-white" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-globe-europe-africa"></i> ENGLISH</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item text-white" href="#">日本語 </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-white" aria-current="page" href="#"><i class="bi bi-search text-white"></i></a>
+                  </li>
+                </ul>
+                <input class="switch-mode" type="checkbox" id="modeDarkToggle" onclick="darkmode()" />
+                <label class="switch-content" for="modeDarkToggle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-brightness-high sun-icon" viewbox="0 0 16 16">
+                    <path
+                      d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                    />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-moon moon-icon" viewbox="0 0 16 16">
+                    <path
+                      d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+                    />
+                  </svg>
+                </label>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-5 d-none" type="search" placeholder="Search" aria-label="Search" />
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col hero-image">
+          <div class="card" style="width: 100%">
+            <div><img class="header-desktop" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Header image.jpeg" alt="header picture" /></div>
+            <div class="card-body header-caption-desktop">
+              <div class="col-3">
+                <a href="https://goo.gl/maps/kS7xu6pN7fvMoaQ2A" target="_blank" class="nikko-location"
+                  ><p class="card-text geo-link"><i class="bi bi-geo-alt"></i> Nikko Area</p></a
+                >
+              </div>
+
+              <h1 class="card-title text-header text-white">Sanbonmatsu Chaya</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="header-mobile" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Header image mobile.jpeg" alt="header picture" />
+    </section>
+    <!-- Sugested section -->
+    <section id="suggested">
+      <div class="container">
+        <div class="row text-start">
+          <div class="col mt-3 mb-2"><h1 class="news-title">Suggested by Nikko</h1></div>
+        </div>
+        <div class="row mb-3">
+          <div class="col card-suggested-desktop">
+            <div class="card card-suggested card-suggested-desktop">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Feel the Nature</h5>
+                    <p class="card-text">See the beauty of nature and an eye-catching view of Japanese traditional architecture.</p>
+                    <p class="card-link text-danger">View more</p>
+                  </div>
+                </div>
+                <div class="col-md-6 card-suggested-desktop">
+                  <img src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Nature pic.jpg" class="img-fluid rounded-end" alt="Nikko nature" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-suggested-mobile">
+            <div class="card card-suggested mb-3 rounded-top card-suggested-mobile">
+              <div class="suggested-img rounded-top"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Nature pic.jpg" alt="Nikko Nature" /></div>
+              <div class="card-body rounded-0">
+                <h6 class="card-title">Feel the Nature</h6>
+                <p class="card-text">See the beauty of nature and an eye-catching view of Japanese traditional architecture.</p>
+                <p class="card-link text-danger">View more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-md-4 mb-3">
+            <div class="card card-suggested card-suggested-small rounded-top">
+              <div class="suggested-img rounded-top"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Craft beer.png" alt="Craft beer Nikko" /></div>
+              <div class="card-body rounded-0">
+                <h6 class="card-title">Craft Beer</h6>
+                <p class="card-text">Take a sip and take a deep breath. I drank two and laughed. After drinking Mikuchi, everyone are friends.</p>
+                <p class="card-link text-danger">View more</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-suggested card-suggested-small rounded-top">
+              <div class="suggested-img rounded-top"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\store.webp" alt="Shop" /></div>
+              <div class="card-body">
+                <h6 class="card-title">Store</h6>
+                <p class="card-text">We offer the fun of choosing from Oku-Nikko's best selection (approximately 1,000 types)!</p>
+                <p class="card-link text-danger">View more</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-suggested card-suggested-small rounded-top">
+              <div class="suggested-img rounded-top"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\itinerary.jpg" alt="Itineraries" /></div>
+              <div class="card-body rounded-0">
+                <h6 class="card-title">Sugessted Itineraries</h6>
+                <p class="card-text">Get your best trip schedules to Nikko from a verified Guides!</p>
+                <p class="card-link text-danger">View more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured events section -->
+    <section id="featured-events">
+      <!-- desktop version -->
+      <div class="container featured-content-desktop">
+        <div class="row text-center">
+          <div class="col mt-3 mb-2"><h1 class="featured-title">Featured Events</h1></div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col mb-5">
+            <a href="#"
+              ><div class="card card-featured rounded-0">
+                <div class="featured-img rounded-0"><img class="featured-img rounded-0" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\spring_thumb.jpg" alt="Card image cap" /></div>
+                <div class="featured-text"><h2 class="text-light">Spring</h2></div>
+              </div></a
+            >
+          </div>
+          <div class="col mb-5">
+            <a href="#">
+              <div class="card card-featured rounded-0">
+                <div class="featured-img rounded-0"><img class="featured-img rounded-0" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\summer_thumb.png" alt="Card image cap" /></div>
+                <div class="featured-text"><h2 class="text-light">Summer</h2></div>
+              </div></a
+            >
+          </div>
+          <div class="col mb-5">
+            <a href="#">
+              <div class="card card-featured rounded-0">
+                <div class="featured-img rounded-0"><img class="featured-img rounded-0" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\autumn_thumb.jpg" alt="Card image cap" /></div>
+                <div class="featured-text"><h2 class="text-light">Autumn</h2></div>
+              </div></a
+            >
+          </div>
+          <div class="col mb-5">
+            <a href="#">
+              <div class="card card-featured rounded-0">
+                <div class="featured-img rounded-0"><img class="featured-img rounded-0" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\winter_thumb.jpg" alt="Card image cap" /></div>
+                <div class="featured-text"><h2 class="text-light">Winter</h2></div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- mobile version -->
+      <div class="container featured-content-mobile">
+        <div class="row text-center">
+          <div class="col mt-3 mb-2"><h1 class="featured-title">Featured Events</h1></div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col mb-2 d-inline-flex">
+            <div class="card card-featured-mobile rounded-0">
+              <div class="featured-img-mobile rounded-0"><img class="featured-img-mobile rounded-0" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\spring_thumb.jpg" alt="Card image cap" /></div>
+              <div class="featured-text"><h3 class="text-light">Spring</h3></div>
+            </div>
+            <div class="card card-featured-mobile rounded-0">
+              <div class="featured-img-mobile rounded-0"><img class="featured-img-mobile rounded-0" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\summer_thumb.png" alt="Card image cap" /></div>
+              <div class="featured-text"><h3 class="text-light">Summer</h3></div>
+            </div>
+          </div>
+          <div class="col mb-1 d-inline-flex">
+            <div class="card card-featured-mobile rounded-0">
+              <div class="featured-img-mobile rounded-0"><img class="featured-img-mobile rounded-0" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\autumn_thumb.jpg" alt="Card image cap" /></div>
+              <div class="featured-text"><h3 class="text-light">Autumn</h3></div>
+            </div>
+            <div class="card card-featured-mobile rounded-0">
+              <div class="featured-img-mobile rounded-0"><img class="featured-img-mobile rounded-0" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\winter_thumb.jpg" alt="Card image cap" /></div>
+              <div class="featured-text"><h3 class="text-light">Winter</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- News section -->
+    <section id="news">
+      <div class="container">
+        <div class="row text-start">
+          <div class="col mt-3 mb-2"><h1 class="news-title">Nikko News</h1></div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-md-4 mb-3">
+            <div class="card card-news rounded-0">
+              <div class="news-img rounded-0"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\niko beer.jpg" alt="Card image cap" /></div>
+              <div class="card-body rounded-0">
+                <p class="card-text">2020/3/15 THE NIKKO MONKEYS won the top prize at the Japan Great Beer Awards 2020.</p>
+                <p class="card-link text-danger">Read article</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-news rounded-0">
+              <div class="news-img rounded-0"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Royal Strawberry.jpg" alt="Card image cap" /></div>
+              <div class="card-body">
+                <p class="card-text rounded-0">We sell frozen strawberries (Royal Queen) at Sanbonmatsu Chaya.</p>
+                <p class="card-link text-danger">Visit shop page</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-news rounded-0">
+              <div class="news-img rounded-0"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\winter duck soba.jpg" alt="Card image cap" /></div>
+              <div class="card-body rounded-0">
+                <p class="card-text">This is the announcement of the sale of duck soba for winter only. Low-calorie and healthy duck meat goes great with grilled green onions!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-news rounded-0">
+              <div class="news-img rounded-0"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Screenshot (703).png" alt="Card image cap" /></div>
+              <div class="card-body rounded-0">
+                <p class="card-text">2021/2/16 Our brand site has been completed.</p>
+                <p class="card-link text-danger">Visit site</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-news rounded-0">
+              <div class="news-img rounded-0"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\niko beer.jpg" alt="Card image cap" /></div>
+              <div class="card-body rounded-0">
+                <p class="card-text">2022/5/13 Tochigi Okunikko Craft Beer 6-bottle set won the Japan Gift Award 2022.</p>
+                <p class="card-link text-danger">Read article</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-news rounded-0">
+              <div class="news-img rounded-0"><img class="card-img-top" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\store.webp" alt="Card image cap" /></div>
+              <div class="card-body rounded-0">
+                <p class="card-text">We offer the fun of choosing from Oku-Nikko's best selection (approximately 1,000 types)!</p>
+                <p class="card-link text-danger">Visit shop page</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col btn-news-container newsBtn-hide-mobile text-end"><button type="button" class="btn btn-outline-danger btn-news rounded-0">See more Nikko News →</button></div>
+          <div class="col btn-news-container newsBtn-hide-desktop text-center"><button type="button" class="btn btn-outline-danger btn-news rounded-0">See more Nikko News →</button></div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimoni section -->
+    <section id="testimoni">
+      <div class="container container-testimoni">
+        <div class="row text-start">
+          <div class="col mt-3 mb-2"><h1 class="news-title">What they say</h1></div>
+        </div>
+        <div class="row justify-content-evenly mb-3">
+          <div class="col">
+            <div class="card card-testimoni-big">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\testimoni pic.jpg" class="img-fluid rounded" alt="Nikko moutain" />
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <div class="row d-block">
+                      <div class="col mb-5">
+                        <p class="card-text">
+                          “Truly a beautiful place... i love the scenery and the fresh air in the area. All the people there are super friendly, the foods are delicious and i couldn't ask for a more better experience!“
+                        </p>
+                      </div>
+                      <div class="col text-center">
+                        <img class="rounded-circle" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\adri.jpg" alt="Adri Kaufmann" style="width: 70px; height: 70px" />
+                        <h5 class="card-title">Adri Kaufmann</h5>
+                        <h6 class="card-subtitle">Traveller</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- desktop version -->
+      <div class="container testimoni-small-desktop">
+        <div class="row justify-content-evenly">
+          <div class="col-lg-4 mb-3">
+            <div class="card card-testimoni">
+              <div class="card-body rounded-0"><p>“You can find anything here! So much amazing products that you can find in the shop, and it's not disappointing at all”</p></div>
+              <div class="card-body rounded-0">
+                <div class="row d-flex">
+                  <div class="col-1 profile-test"><img class="rounded-circle" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\teguh.jpg" alt="Teguh Bahari" style="width: 70px; height: 70px" /></div>
+                  <div class="col ms-5">
+                    <h5 class="card-title">Teguh Bahari</h5>
+                    <h6 class="card-subtitle mb-2">Content Creator</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card card-testimoni">
+              <div class="card-body"><p>“A page i wrote about this place has gained a lot of traffic! the scenery very magnificent, my experience here was also very exciting”</p></div>
+              <div class="card-body rounded">
+                <div class="row d-flex">
+                  <div class="col-1 profile-test"><img class="rounded-circle" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\kaufmann.png" alt="Kaufmann Adri" style="width: 70px; height: 70px" /></div>
+                  <div class="col ms-5">
+                    <h5 class="card-title">Kaufmann Adri</h5>
+                    <h6 class="card-subtitle mb-2">Blogger</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card card-testimoni">
+              <div class="card-body rounded"><p>“Such an amazing place, my viewers all are loving the video that i created here, truly the best thing a YouTuber could've asked for”</p></div>
+              <div class="card-body rounded">
+                <div class="row d-flex">
+                  <div class="col-1 profile-test">
+                    <img class="rounded-circle ms-auto me-1 profile-photo-small" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\cendiana.png" alt="cendiana kusuma" style="width: 70px; height: 70px" />
+                  </div>
+                  <div class="col ms-5 profile-detail-small">
+                    <h5 class="card-title">Cendiana Kusuma</h5>
+                    <h6 class="card-subtitle mb-2">YouTuber</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile version -->
+      <div class="container testimoni-small-mobile">
+        <div id="carouselExampleIndicators" class="carousel slide mb-3">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card card-testimoni">
+                <div class="card-body rounded"><p>“Such an amazing place, my viewers all are loving the video that i created here, truly the best thing a YouTuber could've asked for”</p></div>
+                <div class="card-body rounded">
+                  <div class="row d-flex">
+                    <div class="col-1 profile-test">
+                      <img class="rounded-circle ms-auto me-1 profile-photo-small" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\cendiana.png" alt="cendiana kusuma" style="width: 70px; height: 70px" />
+                    </div>
+                    <div class="col ms-5 profile-detail-small">
+                      <h5 class="card-title">Cendiana Kusuma</h5>
+                      <h6 class="card-subtitle mb-2">YouTuber</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card card-testimoni">
+                <div class="card-body"><p>“A page i wrote about this place has gained a lot of traffic! the scenery very magnificent, my experience here was also very exciting”</p></div>
+                <div class="card-body rounded">
+                  <div class="row d-flex">
+                    <div class="col-1 profile-test"><img class="rounded-circle" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\kaufmann.png" alt="Kaufmann Adri" style="width: 70px; height: 70px" /></div>
+                    <div class="col ms-5">
+                      <h5 class="card-title">Kaufmann Adri</h5>
+                      <h6 class="card-subtitle mb-2">Blogger</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card card-testimoni">
+                <div class="card-body rounded-0"><p>“You can find anything here! So much amazing products that you can find in the shop, and it's not disappointing at all”</p></div>
+                <div class="card-body rounded-0">
+                  <div class="row d-flex">
+                    <div class="col-1 profile-test"><img class="rounded-circle" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\teguh.jpg" alt="Teguh Bahari" style="width: 70px; height: 70px" /></div>
+                    <div class="col ms-5">
+                      <h5 class="card-title">Teguh Bahari</h5>
+                      <h6 class="card-subtitle mb-2">Content Creator</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" class="bi bi-arrow-left-circle-fill btn-testimony-left"></i>
+          <i data-bs-target="#carouselExampleIndicators" data-bs-slide="next" class="bi bi-arrow-right-circle-fill btn-testimony-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\js\script.js"></script>
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+      <div class="col-xl container-footer">
+        <div class="row mx-auto">
+          <div class="company-socials col-lg-4 d-block justify-content-center">
+            <a href="#"><img class="logo-footer logo_light" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Logo.png" alt="logo footer" /></a>
+            <a href="#"><img class="logo-footer logo_dark" src="C:\Users\USER\Desktop\Pojects\Web\Sanbonmatsu Chaya\img\Logo_white.png" alt="logo footer" /></a>
+            <div class="social-icons justify-content-evenly">
+              <ul class="list-unstyled small d-inline-flex">
+                <li>
+                  <a class="social-icon" href="https://www.facebook.com/nikko.senjogahara.sanbonmatsuchaya/" target="_blank"><i class="bi bi-facebook" style="font-size: 40px"></i></a>
+                </li>
+                <li>
+                  <a class="social-icon" href="https://www.instagram.com/nikkobrewing/" target="_blank"><i class="bi bi-instagram" style="font-size: 40px"></i></a>
+                </li>
+                <li>
+                  <a class="social-icon" href="https://twitter.com/Sanbonmatsu_EC" target="_blank"><i class="bi bi-twitter" style="font-size: 40px"></i></a>
+                </li>
+              </ul>
+              <ul class="list-unstyled small d-inline-flex">
+                <li>
+                  <a class="social-icon" href="https://www.youtube.com/@sanbonmatsuchayainnikkonat4157/featured" target="_blank"><i class="bi bi-youtube" style="font-size: 40px"></i></a>
+                </li>
+                <li>
+                  <a class="social-icon" href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin" style="font-size: 40px"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="company-link col">
+            <h6 class="footer-subtitle">Company Profile</h6>
+            <p><a class="clink light-mode" href="">About</a></p>
+            <p><a class="clink light-mode" href="">Our Philosophy</a></p>
+            <p><a class="clink light-mode" href="">Activities Inquiries</a></p>
+            <p><a class="clink light-mode" href="">History</a></p>
+            <p><a class="clink light-mode" href="">Contribution</a></p>
+            <p><a class="clink light-mode" href="">Regional Information</a></p>
+            <p><a class="clink light-mode" href="">Recruitment Introduction</a></p>
+            <p><a class="clink light-mode" href="">FAQ</a></p>
+          </div>
+          <div class="useful-link col">
+            <h6 class="footer-subtitle">Useful Links</h6>
+            <p><a class="ulink light-mode" href="">E-Commerce</a></p>
+            <p><a class="ulink light-mode" href="">Travel Guides</a></p>
+            <p><a class="ulink light-mode" href="">Nikko Craft Beer</a></p>
+            <p><a class="ulink light-mode" href="">Outdoor Activity Equipment</a></p>
+            <p><a class="ulink light-mode" href="">Shop</a></p>
+            <p><a class="ulink light-mode" href="">Rental</a></p>
+            <p><a class="ulink light-mode" href="">Restaurant</a></p>
+            <p><a class="ulink light-mode" href="">Information</a></p>
+          </div>
+          <div class="access-link col-md">
+            <h6 class="footer-subtitle">Access</h6>
+            <p><a class="alink" href="">Public Access Information</a></p>
+            <p><a class="alink" href="">Transportation Information</a></p>
+            <div class="col"><h6 class="footer-subtitle">Contact Us</h6></div>
+            <i class="bi bi-geo-fill" style="width: 25px; height: 25px"></i>
+            <p>
+              2493, Sambommatsu, battlefield ka original, <br />
+              Nikko-city, Tochigi
+            </p>
+            <p><i class="bi bi-telephone-fill light-mode" style="width: 25px; height: 25px"></i> 0288-55-0287</p>
+            <p>
+              <a class="mlink" href="mailto:Sanbonmatsuchaya@gmail.com"><i class="bi bi-envelope-fill" style="height: 25px; width: 25px"></i> Sanbonmatsuchaya@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-copyright">
+        <div class="row">
+          <div class="col copyright align-self-center">
+            <p class="cright">© Sanbonmatsu Chaya. Co., Ltd. 2023</p>
+            <p class="cright">
+              This is the official website of Sanbonmatsu Chaya, Japan. The contents listed on this website are intended for informational purposes rather than commercial. As for the commercial part you could visit to our E-Commerce website
+              listed on our Footer section.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
